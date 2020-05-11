@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Etch-a-Sketch</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastián Fernandez">
+    <meta name="description" content="Have some fun drawin on a board!">
+    <meta name="keywords" content="sebfernandez,draw,etch a sketch,odin project">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon32px.png" type="image/png">
+    <script src="https://kit.fontawesome.com/b15d641fc8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html>
+
+<body>
+    <header>
+        <h1>Etch-a-sketch</h1>
+        <div class="grid-size">
+            <div class="form">
+                <label for="row">Rows:</label>
+                <input type="text" id="row-input" name="row" value="8">
+            </div>
+            <div class="form">
+                <label for="column">Columns:</label>
+                <input type="text" id="column-input" name="column" value="8">
+            </div>
+            <div class="icons-options">
+                <div id="black" class="color-box">Black</div>
+                <div id="crazy" class="color-box">Crazy</div>
+                <div id="rainbow" class="color-box">Rainbow</div>
+            </div>
+            <i id="icon" class="fas fa-edit"></i>
+        </div>
+    </header>
+
+    <main>
+        <div id="container"></div>
+    </main>
+
+    <footer>
+        <a id="icon-size" href="https://github.com/SebFernandez/Rock-paper-scissors"><i class="fab fa-github"></i></a>
+        by Sebastián Fernandez
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>

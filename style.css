@@ -1,5 +1,12 @@
-*   {
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*, *:before, *:after   {
     margin: 0;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 body    {
@@ -47,7 +54,7 @@ header  {
 input   {
     text-align: center;
     margin-left: 50px;
-    width: 30px;
+    width: 5vw;
 }
 
 .color-box  {

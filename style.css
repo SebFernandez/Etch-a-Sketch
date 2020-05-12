@@ -23,6 +23,13 @@ header  {
     flex-shrink: 0;
 }
 
+#title  {
+    margin-top: 1vh;
+    padding: 1px;
+    border-bottom: 3px solid #000000;
+    transition: border-bottom-color 0.7s;
+}
+
 #icon   {
     transition: color 0.7s;
     font-size: 30px;
@@ -35,6 +42,7 @@ header  {
 }
 
 .grid-size  {
+    margin-top: 2vh;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +99,7 @@ main    {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 0;
 }
 

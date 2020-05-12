@@ -1,4 +1,5 @@
 //Grabbing HTML elements.
+var titleWebsite = document.getElementById("title");
 var iconEdit = document.getElementById("icon");
 var container = document.getElementById("container");
 var crazyBox = document.getElementById("crazy");
@@ -47,12 +48,15 @@ function paintRainbow ()    {
 function colorBox (e)   {
     if (black == true)  {
         this.style.backgroundColor = '#000000';
+        titleWebsite.style.borderBottomColor = '#000000';
     }   else if (crazy == true) {
         this.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         crazyBox.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        titleWebsite.style.borderBottomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     }   else if (rainbow == true)   {
         this.style.backgroundColor = rainbowColors [rainbowIndex];
         rainbowBox.style.backgroundColor = rainbowColors [rainbowIndex];
+        titleWebsite.style.borderBottomColor = rainbowColors[rainbowIndex];
         rainbowIndex++;
         if (rainbowIndex < 6)   {
             rainbowIndex++;
